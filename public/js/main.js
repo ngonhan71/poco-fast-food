@@ -267,6 +267,7 @@ for (let i = 0;i < popularDishesCartBtns.length;i++) {
 
         const imgSrc = popularDishesItem.children[0].children[1].children[0].src
         const imgSrcText = imgSrc.split('/').slice(4, 9).join('/')
+        console.log(imgSrcText)
         let count = 1;
         const cost = priceItemValue * count;
         const Item = new Array(popularDishesItemTitle, count, priceItemValue, cost, imgSrcText)
