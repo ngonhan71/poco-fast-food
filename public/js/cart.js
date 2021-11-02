@@ -8,10 +8,11 @@ function showCart() {
     let total = 0;
     for (let i = 0;i < arrayItem.length;i++){
         total += parseFloat(arrayItem[i][3]);
+        console.log(arrayItem[i][4])
         cartInfo += `
                     <tr>
                         <td>
-                            <img src="../public/${arrayItem[i][4]}" alt="">
+                            <img src="./public/img/${arrayItem[i][4]}" alt="">
                         </td>
                         <td>${arrayItem[i][0]}</td>
                         <td>${arrayItem[i][1]}</td>

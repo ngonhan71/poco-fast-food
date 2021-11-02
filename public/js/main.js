@@ -266,12 +266,13 @@ for (let i = 0;i < popularDishesCartBtns.length;i++) {
         
 
         const imgSrc = popularDishesItem.children[0].children[1].children[0].src
-        const imgSrcText = imgSrc.split('/').slice(4, 9).join('/')
+        const imgSrcLength = imgSrc.split('/').length;
+        const imgSrcText = imgSrc.split('/').slice(-3, imgSrcLength).join('/')
         console.log(imgSrcText)
         let count = 1;
         const cost = priceItemValue * count;
         const Item = new Array(popularDishesItemTitle, count, priceItemValue, cost, imgSrcText)
-
+        
         flag = false;
         for (let i = 0; i < arrayItem.length;i++) {
             if (arrayItem[i][0] == popularDishesItemTitle ) {
@@ -285,8 +286,9 @@ for (let i = 0;i < popularDishesCartBtns.length;i++) {
         if (flag == false) {
             arrayItem.push(Item)
         }
-
+        console.log(arrayItem)
         localStorage.setItem('item', JSON.stringify(arrayItem));
+        
         showCart();
         countItem();
 
