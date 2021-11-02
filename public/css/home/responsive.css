@@ -81,8 +81,106 @@
     .container {
         max-width: 700px;
     }
-    .header__header-menu {
+    .header {
         display: none;
+    }
+    .header--mobile {
+        display: block;
+        min-height: 60px;
+        line-height: 60px;
+        box-shadow: 1px 1px 5px black;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 99;
+        background-color: white;
+
+    }
+    
+    .header--mobile .row {
+        justify-content: space-between;
+        align-items: center;
+        
+        
+    }
+
+    #menu-bar {
+        position: relative;
+        top: 4px;
+    }
+
+    #menu-bar i{
+        color: black;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .header--mobile__logo {
+        width: 100px;
+    }
+    .header--mobile__header-menu {
+        display: block;
+        position: fixed;
+        top: -50px;
+        left: 0;
+        background-color: white;
+        box-shadow: 2px 2px 6px black;
+        display: none;
+        transition: all ease 0.5s;
+        width: 400px;
+    }
+
+    
+    .header--mobile__header-menu__item {
+        display: block;
+        border-top: 1px solid rgb(212, 210, 210);
+    }
+    
+    .header--mobile__header-menu__item__link {
+        color: var(--heading);
+        font-weight: 600;
+        padding-right: 24px;
+        padding-left: 16px;
+        display: block;
+    }
+    
+    .header--mobile__header-menu__item__link:hover {
+        color: rgb(255, 157, 0);
+    }
+
+    
+    
+    .header--mobile__feature {
+        display: flex;
+    }
+    .header--mobile__feature__item {
+        align-items: center;
+    }
+    
+    .header--mobile__feature__item:not(:last-child) {
+        margin-right: 10px;
+    }
+    
+    .header--mobile__feature__item a {
+        display: block;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid var(--border);
+    }
+    
+    .header--mobile__feature__item a:hover {
+        background-color: var(--primary);
+    }
+    
+    .header--mobile__feature__item i {
+        color: black;
+        font-size: 24px;
+    }
+    
+    #header--mobile__cart {
+        position: relative;
     }
     .banner {
         height: 550px;
