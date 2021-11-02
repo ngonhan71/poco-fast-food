@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./public/css/base.css">
+    <link rel="stylesheet" href="./public/css/home/style.css">
+    <link rel="stylesheet" href="./public/css/home/responsive.css">
+    <title>Foco - Fast Food Restaurant</title>
+  
+</head>
+<body>
+   <header class="header">
+       <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+       </div>
+       <!-- header top start    -->
+       <div class="header__header-top">
+           <div class="container">
+               <div class="row">
+                <div class="header-top__contact">
+                    <div class="phone">
+                        <span><i class="fas fa-mobile-alt"></i>CALL US: +381 65 666 6666</span>
+                    </div>
+                    <div class="address">
+                         <span><i class="fas fa-map-marker-alt"></i>71 Madison Ave</span>
+                    </div>
+                </div>
+ 
+                <div class="header-top__social-list">
+                    <div class="social-item facebook">
+                         <i class="fab fa-facebook"></i>
+                    </div>
+                    <div class="social-item instagram">
+                         <i class="fab fa-instagram"></i>
+                     </div>
+                     <div class="social-item youtube">
+                         <i class="fab fa-youtube"></i>
+                     </div>
+                     <div class="social-item twitter">
+                         <i class="fab fa-twitter"></i>
+                     </div>
+                    
+                </div>
+               </div>
+
+           </div>
+       </div>
+       <!-- header top end    -->
+
+       <div class="header__header-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="header__logo">
+                        <img src="./public/img/logo_svg.svg" alt="">
+                    </div>
+                    <ul class="header__header-menu">
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__item__link">Home</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__item__link">Menu</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__item__link">About</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__item__link">Shop</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__item__link">Blog</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__item__link">Page</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__item__link">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="header__phone-order">
+                        <i class="img fas fa-motorcycle"></i>
+                        <div class="header__phone-order__content">
+                            <p class="header__phone-order__heading">
+                                Call and Order In
+                            </p>
+                            <p class="header__phone-order__phone">
+                                +1 718-904-4450
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header__feature">
+                        <div class="header__feature__item">
+                            <a href=""><i class="fas fa-search search"></i></a>
+                        </div>
+                        <div class="header__feature__item">
+                            <a href=""><i class="fas fa-user login"></i></a>
+                        </div>
+                        <div class="header__feature__item">
+                            <a href=""><i class="fas fa-heart heart"></i></a>
+                        </div>
+                        <div id="header__cart" class="header__feature__item">
+                            <a href="">
+                                <i class="fas fa-shopping-cart cart"></i>
+                                <span class="header__cart__count-item">0</span>
+                            </a>
+                             
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+       </div>
+   </header>
+    <div class="modal-cart">
+        <div class="modal-cart__cart">
+            <div class="cart__header">
+                <h3 class="cart-title">Shopping cart</h3>
+                <i class="fas fa-times" id="close-icon"></i>
+            </div>
+            <table class="cart__table">
+                <thead>
+                    <th>Tên sản phẩm</th>
+                    <th>Số lượng</th>
+                    <th>Giá</th>
+                    <th>Thành tiền (£)</th>
+                    <th>Xóa</th>
+                </thead>
+                <tbody class="cart__body">
+                    
+                </tbody>
+            </table>
+            <div class="cart__footer">
+                
+            </div>
+            <div class="action">
+                <button class="button cart__item__delete-all-btn">Delete all</button>
+                <button class="button btn-view">
+                    <a href="./cart.html">View cart</a>
+                </button>
+                <button class="button btn-close">Close</button>
+            </div>
+        </div>
+    </div>
+    
+   <header class="header--mobile">
+    
+    <div class="container">
+        <div class="row">
+
+            <div class="menu-bar" id="menu-bar">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="header--mobile__logo">
+                <img src="./public/img/logo_svg.svg" alt="">
+            </div>
+            
+            <ul class="header--mobile__header-menu">
+                <li class="header--mobile__header-menu__item">
+                    <a href="#" class="header--mobile__header-menu__item__link">Home</a>
+                </li>
+                <li class="header--mobile__header-menu__item">
+                    <a href="#" class="header--mobile__header-menu__item__link">Menu</a>
+                </li>
+                <li class="header--mobile__header-menu__item">
+                    <a href="#" class="header--mobile__header-menu__item__link">About</a>
+                </li>
+                <li class="header--mobile__header-menu__item">
+                    <a href="#" class="header--mobile__header-menu__item__link">Shop</a>
+                </li>
+                <li class="header--mobile__header-menu__item">
+                    <a href="#" class="header--mobile__header-menu__item__link">Blog</a>
+                </li>
+                <li class="header--mobile__header-menu__item">
+                    <a href="#" class="header--mobile__header-menu__item__link">Page</a>
+                </li>
+                <li class="header--mobile__header-menu__item">
+                    <a href="#" class="header--mobile__header-menu__item__link">Contact</a>
+                </li>
+            </ul>
+           
+            <div class="header--mobile__feature">
+                <div class="header--mobile__feature__item">
+                    <a href=""><i class="fas fa-search search"></i></a>
+                </div>
+                <div class="header--mobile__feature__item">
+                    <a href=""><i class="fas fa-user login"></i></a>
+                </div>
+               
+                <div id="header--mobile__cart" class="header--mobile__feature__item">
+                    <a href="">
+                        <i class="fas fa-shopping-cart cart"></i>
+                        <span class="header--mobile__cart__count-item">0</span>
+                    </a>
+                   
+                </div>
+            </div>
+        </div>
+        
+    </div>
+   </header>
+   <div class="scroll-top-mobile">
+        <i class="fas fa-arrow-up"></i>
+    </div>  
+    <section class="banner">
+        <!-- <img src="./public/img/h1_bg.jpg" alt="" class="background"> -->
+        <img src="./public/img/h1_pizza.png" alt="" class="pizza">
+        <img src="./public/img/h1_tomato.png" alt="" class="tomato">
+        <img src="./public/img/h1_shape-1.png" alt="" class="shap1">
+        <img src="./public/img/h1_shape-5.png" alt="" class="vegetable">
+        <img src="./public/img/h1_shape-6.png" alt="" class="shap6">
+
+        <div class="banner__content">
+            <div class="banner__content__heading">
+                <h1>Unlimited <br> medium <span>Pizzas</span></h1>
+            </div>
+            <div class="banner__content__sub-heading">
+                <p>Medium 2-topping* pizza</p>
+            </div>
+            <div class="banner__content__desc">
+                *Additional charge for premium toppings. Minimum of 2 required.
+            </div>
+            <div class="banner__content__bot">
+                <a href="#" class="button">Order now    </a>
+                <div class="price">
+                    <span class="sale">$12.99</span>
+                    <span class="old">$19.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="categories">
+        <a href="#" class="button btn-heading">Menus</a>
+        <div class="container">
+            <button class="button slide-btn slide-btn--pre"><i class="fas fa-arrow-left"></i></button>
+            <button class="button slide-btn slide-btn--next"><i class="fas fa-arrow-right"></i></button>
+            <ul class="row">
+                <div class="category">
+                    <a href="#">
+                        <div class="category__item">
+                            <img src="./public/img/category-11.png" alt="">
+                            <p>Combo</p>
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="#">
+                        <div class="category__item">
+                            <img src="./public/img/category-22.png" alt="">
+                            <p>Kids menus</p>
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="#">
+                        <div class="category__item">
+                            <img src="./public/img/category3.png" alt="">
+                            <p>Pizza</p>
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="#">
+                        <div class="category__item">
+                            <img src="./public/img/category-44.png" alt="">
+                            <p>Box meals</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="#">
+                        <div class="category__item">
+                            <img src="./public/img/category5.png" alt="">
+                            <p>Burger</p>
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="#">
+                        <div class="category__item">
+                            <img src="./public/img/category3.png" alt="">
+                            <p>Chicken</p>
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="#">
+                        <div class="category__item">
+                            <img src="./public/img/category7.png" alt="">
+                            <p>Sauces</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="#">
+                        <div class="category__item">
+                            <img src="./public/img/category-55.png" alt="">
+                            <p>Drinks</p>
+                        </div>
+                        
+                    </a>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <section class="advert">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="col__content">
+                        <p class="col__title">Any day offers</p>
+                        <p class="desc">New Phenomenon burger taste</p>
+                        <p class="price">$12.90</p>
+                    </div>
+                    
+                    <div class="image">
+                        <img src="./public/img/h1_banner1-2.png" alt="">
+                        <img src="./public/img/h1_banner1-1.png" alt="" class="child"image >    
+                    </div>
+                    
+                </div>
+                <div class="col">
+                    <div class="col__content">
+                        <p class="col__title">Other flavors</p>
+                        <p class="desc">Save room. We made salats</p>
+                        <p class="price">$12.90</p>
+                    </div>
+                    
+                    <div class="image">
+                        <img src="./public/img/h1_banner2-1.png" alt="">
+                        <img src="./public/img/h1_banner2-2.png" alt="" class="child">    
+                    </div>
+                    
+
+                </div>
+                <div class="col">
+                    <div class="col__content">
+                        <p class="col__title">Find a Poco store near you</p>
+                        <p class="contact">Contact us</p>
+
+                    </div>
+                    <div class="image">
+                        <img src="./public/img/h1_banner2-1.png" alt="">
+                        <img src="./public/img/h1_banner1-1.png" alt="" class="child">    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popular-dishes">
+        <h3 class="popular-dishes__heading">Popular dishes</h3>
+        <ul class="popular-dishes__title-list">
+            <li class="popular-dishes__title-item pizza">
+                <a href="" class="button btn-secondary active">Pizza</a>
+
+            </li>
+            <li class="popular-dishes__title-item drink">
+                <a href="" class="button btn-secondary">Drink</a>
+            </li>
+        </ul>
+        <div class="container">
+            <div class="row popular-dishes__pizza active">
+                    <div class="popular-dishes__item">
+                        <div class="img">
+                            <i class="fas fa-heart heart"></i>
+                            <a href="">
+                                <img src="./public/img/Popular dishes/Pizza/Apricot-Chicken.png" alt="">
+                            </a>
+                            
+                        </div>
+                        <div class="popular-dishes__item__body">
+                            <p class="popular-dishes__item__body__title">Apricot Chicken</p>
+                            <p class="popular-dishes__item__body__desc">
+                                Crispy bacon, tasty ham, pineapple, onion and stretchy mozzarella, finished with a BBQ swirl.
+                            </p>
+                            <div class="popular-dishes__item__body__buy">
+                                <p class="popular-dishes__item__cost">£<span>12.61</span></p>
+                                <p class="popular-dishes__item__sale">£<span>8.00</span> </p>
+                                <i class="fas fa-shopping-cart cart"></i>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="popular-dishes__item">
+                        <div class="img">
+                            <i class="fas fa-heart heart"></i>
+                            <a href="">
+                                <img src="./public/img/Popular dishes/Pizza/Grand-Italiano.png" alt="">
+                            </a>               
+                        </div>
+                        <div class="popular-dishes__item__body">
+                            <p class="popular-dishes__item__body__title">Grand Italiano</p>
+                            <p class="popular-dishes__item__body__desc">
+                                A mighty meaty double helping of all the reasons you love our burger.
+                            </p>
+                            <div class="popular-dishes__item__body__buy">
+                                <p class="popular-dishes__item__sale">£<span>18.30</span></p>
+                                <i class="fas fa-shopping-cart cart"></i>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="popular-dishes__item">
+                        <div class="img">
+                            <i class="fas fa-heart heart"></i>
+                            <a href="">
+                                    <img src="./public/img/Popular dishes/Pizza/Supreme-Pizza.png" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="popular-dishes__item__body">
+                            <p class="popular-dishes__item__body__title">Supreme Pizza</p>
+                            <p class="popular-dishes__item__body__desc">
+                                A mighty meaty double helping of all the reasons you love our burger.
+                            </p>
+                            <div class="popular-dishes__item__body__buy">
+                                <p class="popular-dishes__item__cost">£<span>11.75</span></p>
+                                <p class="popular-dishes__item__sale">£<span>6.00</span> </p>
+                                <i class="fas fa-shopping-cart cart"></i>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="popular-dishes__item">
+                        <div class="img">
+                            <i class="fas fa-heart heart"></i>
+                            <a href="">
+                                <img src="./public/img/Popular dishes/Pizza/BBQ-chicken-breast.png" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="popular-dishes__item__body">
+                            <p class="popular-dishes__item__body__title">BBQ chicken breast</p>
+                            <p class="popular-dishes__item__body__desc">
+                                A mighty meaty double helping of all the reasons you love our burger.
+                            </p>
+                            <div class="popular-dishes__item__body__buy">
+                                <p class="popular-dishes__item__cost">£<span>12.61</span></p>
+                                <p class="popular-dishes__item__sale">£<span>8.00</span> </p>
+                                <i class="fas fa-shopping-cart cart"></i>
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div class="popular-dishes__item">
+                        <div class="img">
+                            <i class="fas fa-heart heart"></i>
+                            <a href="#">
+                                <img src="./public/img/Popular dishes/Pizza/Bacon-Burger.png" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="popular-dishes__item__body">
+                            <p class="popular-dishes__item__body__title">Bacon Burger</p>
+                            <p class="popular-dishes__item__body__desc">
+                                A mighty meaty double helping of all the reasons you love our burger.
+                            </p>
+                            <div class="popular-dishes__item__body__buy">
+                                <p class="popular-dishes__item__sale">£<span>10.95</span></p>
+                                <i class="fas fa-shopping-cart cart "></i>
+                            </div>
+                        </div>  
+                    </div>
+            </div>
+
+
+
+            <div class="row popular-dishes__drink">
+                <div class="popular-dishes__item">
+                    <div class="img">
+                        <i class="fas fa-heart heart"></i>
+                        <a href="">
+                            <img src="./public/img/Popular dishes/Drink/Blueberry-Shake.png" alt="">
+                        </a>
+                        
+                    </div>
+                    <div class="popular-dishes__item__body">
+                        <p class="popular-dishes__item__body__title">Blueberry Shake</p>
+                        <p class="popular-dishes__item__body__desc">
+                            Crispy bacon, tasty ham, pineapple, onion and stretchy mozzarella, finished with a BBQ swirl.
+                        </p>
+                        <div class="popular-dishes__item__body__buy">
+                            <p class="popular-dishes__item__sale">£<span>10.00</span></p>
+                            <i class="fas fa-shopping-cart cart"></i>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="popular-dishes__item">
+                    <div class="img">
+                        <i class="fas fa-heart heart"></i>
+                        <a href="">
+                            <img src="./public/img/Popular dishes/Drink/Kiwi-Smoothie.png" alt="">
+                        </a>               
+                    </div>
+                    <div class="popular-dishes__item__body">
+                        <p class="popular-dishes__item__body__title">Kiwi Smoothie</p>
+                        <p class="popular-dishes__item__body__desc">
+                            A mighty meaty double helping of all the reasons you love our burger.
+
+                        </p>
+                        <div class="popular-dishes__item__body__buy">
+                            <p class="popular-dishes__item__sale">£<span>12.30</span></p>
+                            <i class="fas fa-shopping-cart cart"></i>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="popular-dishes__item">
+                    <div class="img">
+                        <i class="fas fa-heart heart"></i>
+                        <a href="">
+                                <img src="./public/img/Popular dishes/Drink/Iced-Tea-Bottle.png" alt="">
+                        </a>
+                    </div>
+                    
+                    <div class="popular-dishes__item__body">
+                        <p class="popular-dishes__item__body__title">Iced Tea Bottle</p>
+                        <p class="popular-dishes__item__body__desc">
+                            A mighty meaty double helping of all the reasons you love our burger.
+
+                        </p>
+                        <div class="popular-dishes__item__body__buy">
+                            <p class="popular-dishes__item__sale">£<span>11.00</span></p>
+                            <i class="fas fa-shopping-cart cart"></i>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="popular-dishes__item">
+                    <div class="img">
+                        <i class="fas fa-heart heart"></i>
+                        <a href="">
+                            <img src="./public/img/Popular dishes/Drink/Tropicana-Juice.png" alt="">
+                        </a>
+                    </div>
+                    
+                    <div class="popular-dishes__item__body">
+                        <p class="popular-dishes__item__body__title">Tropicana Juice</p>
+                        <p class="popular-dishes__item__body__desc">
+                            A mighty meaty double helping of all the reasons you love our burger.
+
+                        </p>
+                        <div class="popular-dishes__item__body__buy">
+                            <p class="popular-dishes__item__sale">£<span>11.11</span></p>
+                            <i class="fas fa-shopping-cart cart"></i>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="popular-dishes__item">
+                    <div class="img">
+                        <i class="fas fa-heart heart"></i>
+                        <a href="#">
+                            <img src="./public/img/Popular dishes/Drink/Trio-Cafe.png" alt="">
+                        </a>
+                    </div>
+                    
+                    <div class="popular-dishes__item__body">
+                        <p class="popular-dishes__item__body__title">Trio Cafe</p>
+                        <p class="popular-dishes__item__body__desc">
+                            Trio Cafe is Family owned establishment located in Boston Waterfront next to World Trade Center.
+
+                        </p>
+                        <div class="popular-dishes__item__body__buy">
+                            <p class="popular-dishes__item__sale">£<span>12.95</span></p>
+                            <i class="fas fa-shopping-cart cart "></i>
+                        </div>
+                    </div>  
+                </div>
+        </div>
+        </div>
+        <a href="" class="button">All products</a>
+    </section>     
+     <section class="sub-banner">
+         <div class="sub-banner__img">
+            <img src="./public/img/h1_bg.jpg" alt="" class="sub-banner__background">
+            <img src="./public/img/h1_img.png" alt="" class="sub-banner__cake">
+         </div>
+         <div class="sub-banner__sale">
+             <img src="./public/img/h1_think.png" alt="">
+             <h3>
+                 <p class="text">Get Up to</p>
+                 <p class="sale-off">50%</p>
+                 <p class="default">OFF</p>
+            </h3>
+         </div>
+         <div class="sub-banner__heading">
+             <p class="sub-banner__title">Hot Fresh</p>
+             <p class="sub-banner__heading--primary">
+                Hotdog
+             </p>
+         </div>
+         <a href="" class="button">Order now</a>
+     </section>
+
+     <section class="latest-news">
+         <div class="container">
+             <div class="latest-news__top">
+                <h2 class="latest-news__title">Latest news</h2>
+                <a href="">See all
+                    <button class="button see-all-btn"><i class="fas fa-arrow-right"></i></button> 
+                </a>
+             </div> 
+             <div class="row">
+                 <div class="latest-news__item">
+                     <div class="latest-news__item-img">
+                        <img src="./public/img/blog-5-500x330.jpg" alt="">
+                     </div>
+                    
+                    <div class="latest-news__item-body">
+                        <div class="latest-news__item-body__top">
+                            <p class="item__category">Uncategoried /</p>
+                            <p class="day-post">&nbsp;September 7, 2020 /</p>
+                            <p class="author">&nbsp;Post by <span>namdam</span></p>
+                        </div>
+                        <h4 class="latest-news__item-title">
+                            10 Reasons To Do A Digital Detox Challenge
+                        </h4>
+                        <p class="latest-news__item-desc">
+                            Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo.
+                        </p>
+                        <a href="" class="button">Read more</a>
+                    </div>
+                </div>
+
+
+                <div class="latest-news__item">
+                    <div class="latest-news__item-img">
+                        <img src="./public/img/blog-1-500x330.jpg" alt="">
+                    </div>
+                    <div class="latest-news__item-body">
+                        <div class="latest-news__item-body__top">
+                            <p class="item__category">Uncategoried /</p>
+                            <p class="day-post">&nbsp;September 7, 2020 /</p>
+                            <p class="author">&nbsp;Post by <span>namdam</span></p>
+                        </div>
+                        <h4 class="latest-news__item-title">
+                            The Ultimate Hangover Burger: Egg in a Hole Burger Grilled Cheese
+                        </h4>
+                        <p class="latest-news__item-desc">
+                            Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo.
+                        </p>
+                        <a href="" class="button">Read more</a>
+                    </div>
+                </div>
+
+
+                <div class="latest-news__item">
+                    <div class="latest-news__item-img">
+                        <img src="./public/img/blog-2-500x330.jpg" alt="">
+                     </div>
+                    <div class="latest-news__item-body">
+                        <div class="latest-news__item-body__top">
+                            <p class="item__category">Uncategoried / </p>
+                            <p class="day-post">&nbsp;September 7, 2020 / </p>
+                            <p class="author">&nbsp;Post by <span>namdam</span></p>
+                        </div>
+                        <h4 class="latest-news__item-title">
+                            Traditional Soft Pretzels with Sweet Beer Cheese
+                        </h4>
+                        <p class="latest-news__item-desc">
+                            Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo.
+                        </p>
+                        <a href="" class="button">Read more</a>
+                    </div>
+                </div>
+             </div>
+         </div>
+
+     </section>
+     <footer class="footer">
+         <div class="footer__body">
+             <div class="hr"></div>
+             <img src="./public/img/logo_svg.svg" alt="" class="footer__body-img">
+             <div class="container">
+                 <div class="row">
+                     <div class="footer__body-item">
+                         <p class="footer__body-item__title">Address</p>
+                         <address>
+                            570 8th Ave,<br>
+                            New York, NY 10018 <br>
+                            United States
+                         </address>
+                     </div>
+
+                     <div class="footer__body-item">
+                        <p class="footer__body-item__title">Book a table</p>
+                        <p class="footer__body-item__content">
+                            Dogfood och Sliders foodtruck. <br>
+                            Under Om oss kan ni läsa
+                        </p>
+                        <p class="footer__body-item__phone-number">(850) 435-4155</p>
+                    </div>
+
+                    <div class="footer__body-item">
+                        <p class="footer__body-item__title">Opeing hours</p>
+                        <p class="footer__body-item__content">
+                            Monday – Friday: <span>8am – 4pm</span> <br> 
+                            Saturday: <span>9am – 5pm</span>
+                        </p>
+                    </div>
+
+                    <div class="footer__body-item">
+                        <p class="footer__body-item__title">Newsletter</p>
+                        <p class="footer__body-item__content">
+                            Subscribe to the weekly newsletter for all the latest updates
+                        </p>
+                        <div class="footer__body-item__input">
+                            <input type="text" placeholder="Your Email ...">
+                            <button class="button">Subscribe</button>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+         </div>
+         <div class="footer__footer-bot">
+             <div class="container">
+                 <div class="row">
+                    <p class="copyright">
+                        Copyright © 2020 <a href="#">ngonhan71</a>. All Rights Reserved.
+                     </p>
+                     <img src="./public/img/footer_img1.png" alt="">
+                 </div>
+             </div>
+         </div>
+     </footer>
+    <script src="./public/js/main.js"></script>
+</body>
+</html>
