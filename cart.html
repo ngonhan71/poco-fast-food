@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./public/css/base.css">
-    <link rel="stylesheet" href="./public/css/cart-style.css">
+    <link rel="stylesheet" href="./public/css/cart/cart-style.css">
     <link rel="stylesheet" href="./public/css/cart/responsive.css">
     <title>MyCart | Foco - Fast Food Restaurant</title>
 </head>
@@ -172,26 +172,72 @@
     <section class="cart__container">
         <div class="container">
             <h2 class="cart__title">Giỏ hàng</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Sản phẩm</th>
-                        <th>Tên sản phẩm</th>
-                        <th>Số lượng</th>
-                        <th>Giá</th>
-                        <th>Thành tiền (£)</th>
-                        <th>Xóa</th>
-                    </tr>
-        
-                </thead>
-                <tbody id="table-body">
-                    
-                </tbody>
-                <tfoot id="table-foot">
-                    
-                </tfoot>
-            </table>
+            <div class="cart__container-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Giá</th>
+                            <th>Thành tiền (£)</th>
+                            <th>Xóa</th>
+                        </tr>
+            
+                    </thead>
+                    <tbody id="table-body">
+                        
+                    </tbody>
+                    <tfoot id="table-foot">
+                        
+                    </tfoot>
+                </table>
+                <th><button class="button order">Thanh toán</button></th>
+            </div>
+
         </div>
+    </section>
+    <div id="cart-info">
+        <div class="cart-info__content">
+            <div class="cart__info-header">
+                <h2 class="cart-info__title">Thông tin giao hàng</h2>
+                <i class="fas fa-times" id="close-icon"></i>
+            </div>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Họ và tên">
+                    </div>
+                    <div class="wrapper">
+                        <div class="form-group two-third">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group third">
+                            <input type="text" class="form-control" placeholder="Số điện thoại">
+                        </div>
+                    </div>
+                    
+                    <div class="wrapper">
+                        <div class="form-group half">
+                            <label for="">Tỉnh / thành</label>
+                            <select name="" id="province">
+                            </select>
+                        </div>
+                        <div class="form-group half">
+                            <label for="">Quận / huyện</label>
+                            <select name="" id="district">
+                                <option value="null" selected disabled>Chọn quận / huyện</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Địa chỉ">
+                    </div>
+                   <button class="button continue">Tiếp tục</button>
+                </form>
+        </div>
+    </div>
+    <section id="none">
+
     </section>
     <script src="./public/js/cart.js"></script>
 </body>

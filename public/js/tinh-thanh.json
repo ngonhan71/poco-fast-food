@@ -1,0 +1,383 @@
+{
+    "0": {
+        "name": "Chọn tỉnh / thành"
+    },
+    "26": {
+        "name": "Vĩnh Phúc",
+        "slug": "vinh-phuc",
+        "type": "tinh",
+        "code": "26"
+    },
+    "37": {
+        "name": "Ninh Bình",
+        "slug": "ninh-binh",
+        "type": "tinh",
+        "code": "37"
+    },
+    "96": {
+        "name": "Cà Mau",
+        "slug": "ca-mau",
+        "type": "tinh",
+        "code": "96"
+    },
+    "40": {
+        "name": "Nghệ An",
+        "slug": "nghe-an",
+        "type": "tinh",
+        "code": "40"
+    },
+    "86": {
+        "name": "Vĩnh Long",
+        "slug": "vinh-long",
+        "type": "tinh",
+        "code": "86"
+    },
+    "44": {
+        "name": "Quảng Bình",
+        "slug": "quang-binh",
+        "type": "tinh",
+        "code": "44"
+    },
+    "31": {
+        "name": "Hải Phòng",
+        "slug": "hai-phong",
+        "type": "thanh-pho",
+        "code": "31"
+    },
+    "01": {
+        "name": "Hà Nội",
+        "slug": "ha-noi",
+        "type": "thanh-pho",
+        "code": "01"
+    },
+    "87": {
+        "name": "Đồng Tháp",
+        "slug": "dong-thap",
+        "type": "tinh",
+        "code": "87"
+    },
+    "12": {
+        "name": "Lai Châu",
+        "slug": "lai-chau",
+        "type": "tinh",
+        "code": "12"
+    },
+    "33": {
+        "name": "Hưng Yên",
+        "slug": "hung-yen",
+        "type": "tinh",
+        "code": "33"
+    },
+    "20": {
+        "name": "Lạng Sơn",
+        "slug": "lang-son",
+        "type": "tinh",
+        "code": "20"
+    },
+    "75": {
+        "name": "Đồng Nai",
+        "slug": "dong-nai",
+        "type": "tinh",
+        "code": "75"
+    },
+    "82": {
+        "name": "Tiền Giang",
+        "slug": "tien-giang",
+        "type": "tinh",
+        "code": "82"
+    },
+    "54": {
+        "name": "Phú Yên",
+        "slug": "phu-yen",
+        "type": "tinh",
+        "code": "54"
+    },
+    "15": {
+        "name": "Yên Bái",
+        "slug": "yen-bai",
+        "type": "tinh",
+        "code": "15"
+    },
+    "74": {
+        "name": "Bình Dương",
+        "slug": "binh-duong",
+        "type": "tinh",
+        "code": "74"
+    },
+    "49": {
+        "name": "Quảng Nam",
+        "slug": "quang-nam",
+        "type": "tinh",
+        "code": "49"
+    },
+    "11": {
+        "name": "Điện Biên",
+        "slug": "dien-bien",
+        "type": "tinh",
+        "code": "11"
+    },
+    "62": {
+        "name": "Kon Tum",
+        "slug": "kon-tum",
+        "type": "tinh",
+        "code": "62"
+    },
+    "95": {
+        "name": "Bạc Liêu",
+        "slug": "bac-lieu",
+        "type": "tinh",
+        "code": "95"
+    },
+    "66": {
+        "name": "Đắk Lắk",
+        "slug": "dak-lak",
+        "type": "tinh",
+        "code": "66"
+    },
+    "89": {
+        "name": "An Giang",
+        "slug": "an-giang",
+        "type": "tinh",
+        "code": "89"
+    },
+    "38": {
+        "name": "Thanh Hóa",
+        "slug": "thanh-hoa",
+        "type": "tinh",
+        "code": "38"
+    },
+    "51": {
+        "name": "Quảng Ngãi",
+        "slug": "quang-ngai",
+        "type": "tinh",
+        "code": "51"
+    },
+    "72": {
+        "name": "Tây Ninh",
+        "slug": "tay-ninh",
+        "type": "tinh",
+        "code": "72"
+    },
+    "24": {
+        "name": "Bắc Giang",
+        "slug": "bac-giang",
+        "type": "tinh",
+        "code": "24"
+    },
+    "79": {
+        "name": "Hồ Chí Minh",
+        "slug": "ho-chi-minh",
+        "type": "thanh-pho",
+        "code": "79"
+    },
+    "58": {
+        "name": "Ninh Thuận",
+        "slug": "ninh-thuan",
+        "type": "tinh",
+        "code": "58"
+    },
+    "08": {
+        "name": "Tuyên Quang",
+        "slug": "tuyen-quang",
+        "type": "tinh",
+        "code": "08"
+    },
+    "14": {
+        "name": "Sơn La",
+        "slug": "son-la",
+        "type": "tinh",
+        "code": "14"
+    },
+    "36": {
+        "name": "Nam Định",
+        "slug": "nam-dinh",
+        "type": "tinh",
+        "code": "36"
+    },
+    "35": {
+        "name": "Hà Nam",
+        "slug": "ha-nam",
+        "type": "tinh",
+        "code": "35"
+    },
+    "30": {
+        "name": "Hải Dương",
+        "slug": "hai-duong",
+        "type": "tinh",
+        "code": "30"
+    },
+    "77": {
+        "name": "Bà Rịa - Vũng Tàu",
+        "slug": "ba-ria-vung-tau",
+        "type": "tinh",
+        "code": "77"
+    },
+    "91": {
+        "name": "Kiên Giang",
+        "slug": "kien-giang",
+        "type": "tinh",
+        "code": "91"
+    },
+    "04": {
+        "name": "Cao Bằng",
+        "slug": "cao-bang",
+        "type": "tinh",
+        "code": "04"
+    },
+    "42": {
+        "name": "Hà Tĩnh",
+        "slug": "ha-tinh",
+        "type": "tinh",
+        "code": "42"
+    },
+    "64": {
+        "name": "Gia Lai",
+        "slug": "gia-lai",
+        "type": "tinh",
+        "code": "64"
+    },
+    "17": {
+        "name": "Hoà Bình",
+        "slug": "hoa-binh",
+        "type": "tinh",
+        "code": "17"
+    },
+    "94": {
+        "name": "Sóc Trăng",
+        "slug": "soc-trang",
+        "type": "tinh",
+        "code": "94"
+    },
+    "52": {
+        "name": "Bình Định",
+        "slug": "binh-dinh",
+        "type": "tinh",
+        "code": "52"
+    },
+    "34": {
+        "name": "Thái Bình",
+        "slug": "thai-binh",
+        "type": "tinh",
+        "code": "34"
+    },
+    "25": {
+        "name": "Phú Thọ",
+        "slug": "phu-tho",
+        "type": "tinh",
+        "code": "25"
+    },
+    "93": {
+        "name": "Hậu Giang",
+        "slug": "hau-giang",
+        "type": "tinh",
+        "code": "93"
+    },
+    "92": {
+        "name": "Cần Thơ",
+        "slug": "can-tho",
+        "type": "thanh-pho",
+        "code": "92"
+    },
+    "22": {
+        "name": "Quảng Ninh",
+        "slug": "quang-ninh",
+        "type": "tinh",
+        "code": "22"
+    },
+    "45": {
+        "name": "Quảng Trị",
+        "slug": "quang-tri",
+        "type": "tinh",
+        "code": "45"
+    },
+    "10": {
+        "name": "Lào Cai",
+        "slug": "lao-cai",
+        "type": "tinh",
+        "code": "10"
+    },
+    "67": {
+        "name": "Đắk Nông",
+        "slug": "dak-nong",
+        "type": "tinh",
+        "code": "67"
+    },
+    "27": {
+        "name": "Bắc Ninh",
+        "slug": "bac-ninh",
+        "type": "tinh",
+        "code": "27"
+    },
+    "68": {
+        "name": "Lâm Đồng",
+        "slug": "lam-dong",
+        "type": "tinh",
+        "code": "68"
+    },
+    "19": {
+        "name": "Thái Nguyên",
+        "slug": "thai-nguyen",
+        "type": "tinh",
+        "code": "19"
+    },
+    "60": {
+        "name": "Bình Thuận",
+        "slug": "binh-thuan",
+        "type": "tinh",
+        "code": "60"
+    },
+    "56": {
+        "name": "Khánh Hòa",
+        "slug": "khanh-hoa",
+        "type": "tinh",
+        "code": "56"
+    },
+    "83": {
+        "name": "Bến Tre",
+        "slug": "ben-tre",
+        "type": "tinh",
+        "code": "83"
+    },
+    "46": {
+        "name": "Thừa Thiên Huế",
+        "slug": "thua-thien-hue",
+        "type": "tinh",
+        "code": "46"
+    },
+    "02": {
+        "name": "Hà Giang",
+        "slug": "ha-giang",
+        "type": "tinh",
+        "code": "02"
+    },
+    "84": {
+        "name": "Trà Vinh",
+        "slug": "tra-vinh",
+        "type": "tinh",
+        "code": "84"
+    },
+    "80": {
+        "name": "Long An",
+        "slug": "long-an",
+        "type": "tinh",
+        "code": "80"
+    },
+    "06": {
+        "name": "Bắc Kạn",
+        "slug": "bac-kan",
+        "type": "tinh",
+        "code": "06"
+    },
+    "48": {
+        "name": "Đà Nẵng",
+        "slug": "da-nang",
+        "type": "thanh-pho",
+        "code": "48"
+    },
+    "70": {
+        "name": "Bình Phước",
+        "slug": "binh-phuoc",
+        "type": "tinh",
+        "code": "70"
+    }
+}

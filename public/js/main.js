@@ -2,14 +2,11 @@ const preBtn = document.querySelector('.slide-btn--pre')
 const nextBtn = document.querySelector('.slide-btn--next')
 
 const popularDishesTitles = document.querySelectorAll('.popular-dishes__title-item a')
-
 const popularDishesPizza = document.querySelector('.popular-dishes__title-item.pizza a')
 const popularDishesDrink = document.querySelector('.popular-dishes__title-item.drink a')
 
 const rowPopularDishesPizza = document.querySelector('.row.popular-dishes__pizza')
 const rowPopularDishesDrink = document.querySelector('.popular-dishes__drink')
-
-
 
 var current = 0;
 nextBtn.addEventListener('click', function(e) {
@@ -60,60 +57,29 @@ setInterval(function() {
         category.style.transform = `translateX(${transformX}%)`;
     }
 }, 5000)
-// function autoSlides() {
-//     current++;
-//     if (current > 4) {
-//         current = 0;
-//         nextBtn.disabled = true;
-//     }
-//     else {
-//         nextBtn.disabled = false;
-//     }
-//     var transformX = current * (-100);
-//     var categories = document.querySelectorAll('.category')
-//     for(let i = 0;i < categories.length;i++){
-//         const category = categories[i];
-//         category.style.transform = `translateX(${transformX}%)`;
-//     }
-//     // setTimeout(showSlides, 2000); 
-// }
 
-// setInterval(autoSlides, 4000)
-
+const popularDishesTab = document.querySelectorAll('.popular-dishes-tab')
 for (let i = 0;i < popularDishesTitles.length; i++) {
     popularDishesTitle = popularDishesTitles[i];
     popularDishesTitle.onclick = function(e) {
         const popularDishesTitleActive = document.querySelector('.popular-dishes__title-item .active')
+        const popularDishesTabActive = document.querySelector('.popular-dishes-tab.active')
+        console.log(popularDishesTabActive)
         e.preventDefault();
-
 
         if (popularDishesTitleActive.classList.contains('active'))
             popularDishesTitleActive.classList.remove('active')
         e.target.classList.add('active');
 
-        if (popularDishesPizza.classList.contains('active')) {
-            rowPopularDishesPizza.classList.add('active')
-            rowPopularDishesPizza.classList.remove('hide')
+        popularDishesTabActive.classList.remove('active')
+        popularDishesTabActive.classList.add('hide')
 
-        }
-        else {
-            rowPopularDishesPizza.classList.remove('active')
-            rowPopularDishesPizza.classList.add('hide')
-
-        }
-
-        if (popularDishesDrink.classList.contains('active')) {
-            rowPopularDishesDrink.classList.add('active')
-            rowPopularDishesDrink.classList.remove('hide')
-        }  
-        else {
-            rowPopularDishesDrink.classList.remove('active')
-            rowPopularDishesDrink.classList.add('hide')
-        }  
-        }
+        popularDishesTab[i].classList.add('active')
+        popularDishesTab[i].classList.remove('hide')
+    }
             
 
-    }
+}
 
 // Header: scroll event
 const headerTop = document.querySelector('.header__header-top')
@@ -237,6 +203,7 @@ menuBar.onclick = function() {
 }
 
 
+const modalMessage = document.querySelector('.modal-message')
 
 for (let i = 0;i < popularDishesCartBtns.length;i++) {
     const popularDishesCartBtn = popularDishesCartBtns[i]
@@ -271,13 +238,12 @@ for (let i = 0;i < popularDishesCartBtns.length;i++) {
         console.log(imgSrcText)
         let count = 1;
         const cost = priceItemValue * count;
-        const Item = new Array(popularDishesItemTitle, count, priceItemValue, cost, imgSrcText)
+        const Item = new Array(popularDishesItemTitle, count, priceItemValue, imgSrcText)
         
         flag = false;
         for (let i = 0; i < arrayItem.length;i++) {
             if (arrayItem[i][0] == popularDishesItemTitle ) {
                 count += parseInt(arrayItem[i][1]);
-                arrayItem[i][3] = (priceItemValue * count).toFixed(2);
                 arrayItem[i][1] = count;
                 flag = true;
                 break;
@@ -291,7 +257,10 @@ for (let i = 0;i < popularDishesCartBtns.length;i++) {
         
         showCart();
         countItem();
-
+        modalMessage.classList.add('active')
+        setTimeout(function() {
+            modalMessage.classList.remove('active')
+        }, 3000)
     }
 }
 
@@ -323,13 +292,13 @@ function showCart() {
     }
      
     for (let i = 0;i < arrayItemFromLocalStorage.length;i++) {
-        total += parseFloat(arrayItemFromLocalStorage[i][3]);
+        total += (parseFloat(arrayItemFromLocalStorage[i][1]) * parseFloat(arrayItemFromLocalStorage[i][2]));
         cartInfo += `
                     <tr>
                         <td>${arrayItemFromLocalStorage[i][0]}</td>
                         <td>${arrayItemFromLocalStorage[i][1]}</td>
                         <td>${arrayItemFromLocalStorage[i][2]}</td>
-                        <td>${arrayItemFromLocalStorage[i][3]}</td>
+                        <td>${(arrayItemFromLocalStorage[i][1] * arrayItemFromLocalStorage[i][2]).toFixed(2)}</td>
                         <td>
                             <button onclick="deleteItem(this)" class="button cart__item__delete-btn">
                                 <i class="fas fa-trash-alt"></i>
