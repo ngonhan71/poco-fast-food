@@ -1,11 +1,40 @@
 const cartBody = document.getElementById('table-body')
 const cartFoot = document.getElementById('table-foot')
+const cartHead = document.querySelector('table thead')
+const cartTitle = document.querySelector('.cart__title')
+const orderBtn = document.querySelector('.cart__container .button') 
+const tableCartEmpty = document.querySelector('table.empty')
 
 function showCart() {
     const arrayItem = JSON.parse(localStorage.getItem('item'))
     let cartInfo = "";
     let cartTotal = "";
     let total = 0;
+
+    if (arrayItem.length == 0) {
+        cartHead.style.display = 'none'
+        orderBtn.style.display = 'none'
+        cartTotalCost = ""
+        cartTitle.innerText = 'Giỏ hàng của bạn rỗng'
+        cartInfo = "";
+        
+        let cartEmpty = `<tr>
+                            <th>        
+                                <img src="./public/img/empty-cart.png" class="empty-cart" alt="">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>        
+                                <a href="./index.html" class="button back-home">Tiếp tục mua sắm</a>
+                            </th>
+                        </tr>`;
+        tableCartEmpty.style.display = 'table'
+        tableCartEmpty.innerHTML = cartEmpty
+        cartBody.innerHTML = cartInfo;
+        cartFoot.innerHTML = cartTotalCost;
+
+        return;
+    }
     for (let i = 0;i < arrayItem.length;i++){
         total += (parseFloat(arrayItem[i][1]) * parseFloat(arrayItem[i][2]));
         console.log(arrayItem[i][3])
@@ -179,7 +208,6 @@ selectProvince.onchange = function() {
 const cartInfo = document.getElementById('cart-info')
 const closeBtn = document.querySelector('.cart__info-header i')
 
-const orderBtn = document.querySelector('.cart__container .button') 
 
 orderBtn.onclick = function() {
     cartInfo.classList.add('active')

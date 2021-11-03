@@ -124,7 +124,7 @@
     td {
         padding: 10px 20px;
     }
-       
+      
 }
 
 @media screen and (min-width:414px) and (max-width:767px) {
@@ -242,9 +242,12 @@
     .cart__container {
         margin-top: 80px;
     }
+    .cart__container-content {
+        width: 380px;
+    }
     table {
         width: 100%;
-        max-width: 410px;
+        max-width: 400px;
         font-size: 12px;
     }
     th, td {
@@ -254,6 +257,59 @@
     table img {
         min-width: 60px;
         height: 50px;
+    }
+    .cart__container .button.order {
+        padding: 14px 25px;
+    }
+    .cart__title {
+        font-size: 20px;
+    }
+    table.empty th {
+        padding: 0 80px;
+    
+    }
+
+    .cart__title {
+        font-size: 20px;
+    }
+    .cart__container .button.order {
+        padding: 10px 20px;
+    }
+    #cart-info .cart-info__content {
+        padding: 12px;
+        width: 400px;
+    }
+
+    .cart__info-header {
+        margin-bottom: 15px;
+        align-items: baseline;
+        font-size: 13px;
+    }
+    .cart__info-header i {
+        font-size: 24px;
+    }
+    .form-control {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    
+    .wrapper label {
+        font-size: 11px;
+        padding-left: 12px;
+        margin-top: 1px;
+    }
+
+    .form-group select {
+        padding-top: 16px;
+        padding-bottom: 2px;
+        padding-left: 6px;
+        font-size: 13px;
+    }
+        
+    #cart-info .button {
+        padding: 10px 30px;
+        border-radius: 4px;
     }
 }
 
@@ -385,6 +441,9 @@
     .cart__container {
         margin-top: 60px;
     }
+    .cart__container-content {
+        width: 320px;
+    }
     table {
         width: 100%;
         max-width: 320px;
@@ -404,4 +463,47 @@
         color: black;
         font-size: 16px;
     }
+    .cart__title {
+        font-size: 20px;
+    }
+    .cart__container .button.order {
+        padding: 10px 20px;
+    }
+    #cart-info .cart-info__content {
+        padding: 12px;
+        width: 320px;
+    }
+
+    .cart__info-header {
+        margin-bottom: 10px;
+        align-items: baseline;
+        font-size: 11px;
+    }
+    .cart__info-header i {
+        font-size: 20px;
+    }
+    .form-control {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    
+    .wrapper label {
+        font-size: 10px;
+        padding-left: 12px;
+        margin-top: 1px;
+    }
+
+    .form-group select {
+        padding-top: 14px;
+        padding-bottom: 2px;
+        padding-left: 6px;
+        font-size: 13px;
+    }
+        
+    #cart-info .button {
+        padding: 10px 30px;
+        border-radius: 4px;
+    }
+
 }

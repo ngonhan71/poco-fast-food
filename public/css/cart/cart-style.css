@@ -165,7 +165,7 @@
 
 .cart__container-content {
     margin: 0 auto;
-    width: 800px;
+    max-width: 800px;
     position: relative;
 }
 .cart__title {
@@ -363,4 +363,24 @@ table td input {
     display: block;
     opacity: 1;
     animation: fadein1 ease 0.8s;
+}
+table.empty {
+    display: none;
+}
+
+table.empty img.empty-cart {
+    width: 200px;
+    height: 200px;
+}
+
+table.empty,
+table.empty th {
+    border: none;
+}
+table.empty th {
+    padding: 0 50px;
+
+}
+table.empty .button {
+    color: white;
 }
