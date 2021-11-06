@@ -786,7 +786,24 @@
     .cart__item__delete-btn i {
         font-size: 16px;
     }
+    .modal-message {
+        top: 60px;
+        right: 10px;
+        width: 300px;
+    }
+    .modal-message .message {
+        border-left: 10px solid var(--secondary);
+        padding: 6px;
+        font-size: 16px;
+    }
     
+    .modal-message i {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+        margin: 0 10px 0 10px;
+    }
 }
 
 @media screen and (min-width:320px) and (max-width:413px) {
@@ -1244,4 +1261,25 @@
     .cart__item__delete-btn i {
         font-size: 16px;
     }
+    .modal-message {
+        top: 60px;
+        right: 10px;
+        width: 300px;
+    }
+    .modal-message .message {
+        margin-top: 10px;
+        border-left: 10px solid var(--secondary);
+        padding: 6px;
+        font-size: 16px;
+    }
+    
+    .modal-message i {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+        margin: 0 10px 0 10px;
+    }
+    
+    
 }

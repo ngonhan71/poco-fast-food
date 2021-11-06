@@ -362,7 +362,7 @@ table td input {
 #cart-info.active {
     display: block;
     opacity: 1;
-    animation: fadein1 ease 0.8s;
+    animation: fadeInLeft ease 0.8s;
 }
 table.empty {
     display: none;

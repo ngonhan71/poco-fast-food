@@ -257,10 +257,15 @@ for (let i = 0;i < popularDishesCartBtns.length;i++) {
         
         showCart();
         countItem();
-        modalMessage.classList.add('active')
+      
+        const message = document.createElement('div')
+        message.classList.add('message')
+        message.innerHTML = `<i class="fas fa-check"></i>
+                            <p class="message__content">Thêm sản phẩm thành công!</p>`
+        modalMessage.appendChild(message)
         setTimeout(function() {
-            modalMessage.classList.remove('active')
-        }, 3000)
+            modalMessage.removeChild(message)
+        }, 4000)
     }
 }
 
