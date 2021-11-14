@@ -11,7 +11,7 @@ function showCart() {
     let cartTotal = "";
     let total = 0;
 
-    if (arrayItem.length == 0) {
+    if (!arrayItem || arrayItem.length == 0) {
         cartHead.style.display = 'none'
         orderBtn.style.display = 'none'
         cartTotalCost = ""

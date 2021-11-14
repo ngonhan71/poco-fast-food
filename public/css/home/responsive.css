@@ -389,7 +389,7 @@
         border-radius: 4px;
     }
     .container {
-        max-width: 380px;
+        max-width: 100%;
     }
     .scroll-top {
         display: none;
@@ -678,7 +678,8 @@
     .latest-news__item {
         width: calc(calc(100% / 2) - 8px);
         max-width: calc(calc(100% / 2) - 8px);
-        margin: 0 4px;
+        margin-left: 4px;
+        margin-right: 4px;
     }
 
     .latest-news__item-body {
@@ -817,6 +818,7 @@
     .container {
         max-width: 350px;
         margin: 0 auto;
+        max-width: 100%;
     }
     .scroll-top {
         display: none;

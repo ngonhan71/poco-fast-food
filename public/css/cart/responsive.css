@@ -269,6 +269,12 @@
     
     }
 
+    table td input {
+        width: 30px;
+        padding: 2px 8px;
+        font-size: 14px;
+    }
+
     .cart__title {
         font-size: 20px;
     }
@@ -452,6 +458,11 @@
     th, td {
         padding: 6px 2px;
         text-align: center;
+    }
+    table td input {
+        width: 30px;
+        padding: 2px 8px;
+        font-size: 14px;
     }
     
     table img {

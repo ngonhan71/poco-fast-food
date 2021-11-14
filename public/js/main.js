@@ -81,6 +81,20 @@ for (let i = 0;i < popularDishesTitles.length; i++) {
 
 }
 
+
+const searchBtn = document.querySelector('.header__feature__item.search-btn')
+const searchInput = document.querySelector('.header__feature__item.search-btn .input-search')
+searchBtn.onclick = function(e) {
+    e.preventDefault();
+    searchInput.classList.toggle('active');
+    
+}
+
+// searchInput.onclick = function(e) {
+//     e.stopPropagation();
+// }
+
+
 // Header: scroll event
 const headerTop = document.querySelector('.header__header-top')
 const headerNav = document.querySelector('.header__header-nav')
@@ -360,3 +374,4 @@ function deleteItem(x) {
     countItem();
 
 }
+
